@@ -1,0 +1,12 @@
+parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"wy9e":[function(require,module,exports) {
+module.exports="/Azzana/search.c15c5e55.svg";
+},{}],"UK9d":[function(require,module,exports) {
+module.exports="/Azzana/cosh.14214f31.svg";
+},{}],"TwZx":[function(require,module,exports) {
+
+},{}],"w2gl":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.getPageHeader=t;var e=r(require("../../img/search.svg")),a=r(require("../../img/cosh.svg"));function r(e){return e&&e.__esModule?e:{default:e}}function t(){var r=document.createElement("header");r.className="page-header";var t=document.createElement("div");t.className="header-div",t.innerHTML='\n        <p class="header-div-text">CHRISTMAS SALE: 2 JEWELERY PURCHASED, THE 3rd FREE! / FREE DELIVERY FR</p>\n        <img class="header-div-img" src="'.concat(e.default,'">\n        <p class="header-div_text">SEARCH</p>\n        <img class="header-div_img" src="').concat(a.default,'">\n    ');var d=document.createElement("div");return d.className="container",r.append(t),r.append(d),r}require("./pageHeader.css");
+},{"../../img/search.svg":"wy9e","../../img/cosh.svg":"UK9d","./pageHeader.css":"TwZx"}],"Focm":[function(require,module,exports) {
+"use strict";var e=require("./src/page/pageHeader/pageHeader"),a=document.querySelector("#app"),r=(0,e.getPageHeader)();a.append(r);
+},{"./src/page/pageHeader/pageHeader":"w2gl"}]},{},["Focm"], null)
+//# sourceMappingURL=/Azzana/Azzana.d24a6557.js.map
