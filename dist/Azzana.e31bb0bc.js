@@ -236,14 +236,60 @@ function getPageHeader() {
   headerBlock.append(headerList_1, headerImg, headerList_2);
   return header;
 }
-},{"../../img/search.svg":"src/img/search.svg","../../img/cosh.svg":"src/img/cosh.svg","../../img/logo.png":"src/img/logo.png","./pageHeader.css":"src/page/pageHeader/pageHeader.css"}],"index.js":[function(require,module,exports) {
+},{"../../img/search.svg":"src/img/search.svg","../../img/cosh.svg":"src/img/cosh.svg","../../img/logo.png":"src/img/logo.png","./pageHeader.css":"src/page/pageHeader/pageHeader.css"}],"src/components/main/sectionMain.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../../img/main-bg.png":[["main-bg.13403173.png","src/img/main-bg.png"],"src/img/main-bg.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/main/sectionMain.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getSectionMain = getSectionMain;
+require("./sectionMain.css");
+function getSectionMain() {
+  var section = document.createElement("section");
+  section.className = "section-main";
+  var container = document.createElement("div");
+  container.className = "container";
+  var sectionBlock = document.createElement("div");
+  sectionBlock.className = "section-block";
+  sectionBlock.innerHTML = "\n        <h1 class=\"section-block-title\">Black Friday</h1>\n        <p class=\"section-block-text\">2 Bijoux Achetes le 3eme Offert !</p>\n        <button class=\"section-block-btn\">Discover the Jewelry</button>\n    ";
+  section.append(container);
+  container.append(sectionBlock);
+  return section;
+}
+},{"./sectionMain.css":"src/components/main/sectionMain.css"}],"src/page/pageMain/pageMain.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/page/pageMain/pageMain.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getPageMain = getPageMain;
+var _sectionMain = require("../../components/main/sectionMain");
+require("./pageMain.css");
+function getPageMain() {
+  var main = document.createElement("main");
+  main.className = "main";
+  var sectionMain = (0, _sectionMain.getSectionMain)();
+  main.append(sectionMain);
+  return main;
+}
+},{"../../components/main/sectionMain":"src/components/main/sectionMain.js","./pageMain.css":"src/page/pageMain/pageMain.css"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _pageHeader = require("./src/page/pageHeader/pageHeader");
+var _pageMain = require("./src/page/pageMain/pageMain");
 var app = document.querySelector("#app");
 var header = (0, _pageHeader.getPageHeader)();
-app.append(header);
-},{"./src/page/pageHeader/pageHeader":"src/page/pageHeader/pageHeader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var main = (0, _pageMain.getPageMain)();
+app.append(header, main);
+},{"./src/page/pageHeader/pageHeader":"src/page/pageHeader/pageHeader.js","./src/page/pageMain/pageMain":"src/page/pageMain/pageMain.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -268,7 +314,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39061" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36241" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
