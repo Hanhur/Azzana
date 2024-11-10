@@ -1,0 +1,44 @@
+parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"wy9e":[function(require,module,exports) {
+module.exports="/Azzana/search.c15c5e55.svg";
+},{}],"UK9d":[function(require,module,exports) {
+module.exports="/Azzana/cosh.14214f31.svg";
+},{}],"DIx1":[function(require,module,exports) {
+module.exports="/Azzana/logo.34548d35.png";
+},{}],"TwZx":[function(require,module,exports) {
+
+},{}],"w2gl":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.getPageHeader=d;var e=t(require("../../img/search.svg")),a=t(require("../../img/cosh.svg")),r=t(require("../../img/logo.png"));function t(e){return e&&e.__esModule?e:{default:e}}require("./pageHeader.css");var n=["Home ","Necklaces","Braceltes","Rings"],c=["Earrings","Ankle Bracelets","All","Track My Oreder"];function d(){var t=document.createElement("header");t.className="page-header";var d=document.createElement("div");d.className="header-div",d.innerHTML='\n        <p class="header-div-text">CHRISTMAS SALE: 2 JEWELERY PURCHASED, THE 3rd FREE! / FREE DELIVERY FR</p>\n        <img class="header-div-img" src="'.concat(e.default,'">\n        <p class="header-div_text">SEARCH</p>\n        <img class="header-div_img" src="').concat(a.default,'">\n    ');var l=document.createElement("div");l.className="container";var s=document.createElement("div");s.className="header-block";var i=document.createElement("ul");i.className="header-list",n.forEach(function(e){var a=document.createElement("li");a.className="header-items";var r=document.createElement("a");r.className="header-link",r.href="#",i.appendChild(a),a.appendChild(r),r.innerHTML=e});var m=document.createElement("ul");m.className="header-list",c.forEach(function(e){var a=document.createElement("li");a.className="header-items";var r=document.createElement("a");r.className="header-link",r.href="#",m.appendChild(a),a.appendChild(r),r.innerHTML=e});var u=document.createElement("img");return u.className="header-img",u.src=r.default,u.alt="Azzana",t.append(d),t.append(l),l.append(s),s.append(i,u,m),t}
+},{"../../img/search.svg":"wy9e","../../img/cosh.svg":"UK9d","../../img/logo.png":"DIx1","./pageHeader.css":"TwZx"}],"GQZm":[function(require,module,exports) {
+
+},{"./../../img/main-bg.png":[["main-bg.68f6866d.png","uxOP"],"uxOP"]}],"fy62":[function(require,module,exports) {
+"use strict";function e(){var e=document.createElement("section");e.className="section-main";var t=document.createElement("div");t.className="container";var n=document.createElement("div");return n.className="section-block",n.innerHTML='\n        <h1 class="section-block-title">Black Friday</h1>\n        <p class="section-block-text">2 Bijoux Achetes le 3eme Offert !</p>\n        <button class="section-block-btn">Discover the Jewelry</button>\n    ',e.append(t),t.append(n),e}Object.defineProperty(exports,"__esModule",{value:!0}),exports.getSectionMain=e,require("./sectionMain.css");
+},{"./sectionMain.css":"GQZm"}],"oUAX":[function(require,module,exports) {
+module.exports="/Azzana/images1.3544b0eb.png";
+},{}],"BYhU":[function(require,module,exports) {
+module.exports="/Azzana/images2.5dbc9019.png";
+},{}],"PtIw":[function(require,module,exports) {
+module.exports="/Azzana/images3.3b7e245e.png";
+},{}],"dcVp":[function(require,module,exports) {
+module.exports="/Azzana/images4.ce54f1d0.png";
+},{}],"a0Am":[function(require,module,exports) {
+module.exports="/Azzana/images5.0e1b2b3c.png";
+},{}],"lWWy":[function(require,module,exports) {
+module.exports="/Azzana/images6.93de81e7.png";
+},{}],"D0XM":[function(require,module,exports) {
+module.exports="/Azzana/images7.527ed0bf.png";
+},{}],"yCn8":[function(require,module,exports) {
+module.exports="/Azzana/images8.70644098.png";
+},{}],"uNQE":[function(require,module,exports) {
+module.exports="/Azzana/images9.f91f596b.svg";
+},{}],"DoP0":[function(require,module,exports) {
+module.exports="/Azzana/images10.2a4906c4.svg";
+},{}],"MxvZ":[function(require,module,exports) {
+
+},{"./../../img/bestsellers/heading_left.png":[["heading_left.d12eb76f.png","qFAw"],"qFAw"],"./../../img/bestsellers/heading_right.png":[["heading_right.fda43e85.png","imlc"],"imlc"]}],"t9aA":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.getBestsellers=b;var e=m(require("../../img/bestsellers/images1.png")),s=m(require("../../img/bestsellers/images2.png")),l=m(require("../../img/bestsellers/images3.png")),t=m(require("../../img/bestsellers/images4.png")),r=m(require("../../img/bestsellers/images5.png")),a=m(require("../../img/bestsellers/images6.png")),i=m(require("../../img/bestsellers/images7.png")),n=m(require("../../img/bestsellers/images8.png")),c=m(require("../../img/bestsellers/images9.svg")),g=m(require("../../img/bestsellers/images10.svg"));function m(e){return e&&e.__esModule?e:{default:e}}require("./bestsellers.css");var u=[e.default,s.default,l.default,t.default,r.default,a.default,i.default,n.default];function b(){var e=document.createElement("section");e.className="section-bestsellers";var s=document.createElement("div");s.className="container";var l=document.createElement("div");l.className="shipping-block",l.innerHTML='\n        <p class="shipping-text">FREE SHIPPING FR</p>\n        <h2 class="shipping-title">The Bestsellers</h2>\n    ';var t=document.createElement("div");t.className="bestsellers-block";var r=u.map(function(e){return'\n       <ul class="bestsellers-list">\n            <li class="bestsellers-item">\n                <img class="bestsellers-img" src="'.concat(e,'" alt="Person Image">\n                <div class="bestsellers-box">\n                    <h3 class="bestsellers-title">NECKLACE "MURATO"</h3>\n                    <div class="bestsellers_box">\n                        <span class="bestsellers-span">$ 19.99</span>\n                        <span class="bestsellers_span">$ 23.00</span>\n                    </div>\n                    <div class="bestsellers-box_img">\n                        <img class="bestsellers_img" src="').concat(c.default,'">\n                        <img class="bestsellers_img" src="').concat(c.default,'">\n                        <img class="bestsellers_img" src="').concat(c.default,'">\n                        <img class="bestsellers_img" src="').concat(c.default,'">\n                        <img class="bestsellers_img" src="').concat(g.default,'">\n                    </div>\n                </div>\n            </li>\n       </ul>\n    ')}).join("");return t.innerHTML=r,e.append(s),s.append(l,t),e}
+},{"../../img/bestsellers/images1.png":"oUAX","../../img/bestsellers/images2.png":"BYhU","../../img/bestsellers/images3.png":"PtIw","../../img/bestsellers/images4.png":"dcVp","../../img/bestsellers/images5.png":"a0Am","../../img/bestsellers/images6.png":"lWWy","../../img/bestsellers/images7.png":"D0XM","../../img/bestsellers/images8.png":"yCn8","../../img/bestsellers/images9.svg":"uNQE","../../img/bestsellers/images10.svg":"DoP0","./bestsellers.css":"MxvZ"}],"cp13":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.getPageMain=t;var e=require("../../components/main/sectionMain"),s=require("../../components/bestsellers/bestsellers");function t(){var t=document.createElement("main");t.className="main";var n=(0,e.getSectionMain)(),r=(0,s.getBestsellers)();return t.append(n,r),t}require("./pageMain.css");
+},{"../../components/main/sectionMain":"fy62","../../components/bestsellers/bestsellers":"t9aA","./pageMain.css":"TwZx"}],"Focm":[function(require,module,exports) {
+"use strict";var e=require("./src/page/pageHeader/pageHeader"),a=require("./src/page/pageMain/pageMain"),r=document.querySelector("#app"),g=(0,e.getPageHeader)(),p=(0,a.getPageMain)();r.append(g,p);
+},{"./src/page/pageHeader/pageHeader":"w2gl","./src/page/pageMain/pageMain":"cp13"}]},{},["Focm"], null)
+//# sourceMappingURL=/Azzana/Azzana.d0a8c2db.js.map

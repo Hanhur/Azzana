@@ -52,6 +52,7 @@
     background-size: cover;
     width: 100%;
     height: 788px;
+    margin-bottom: 40px;
 }
 .section-block
 {
@@ -81,6 +82,111 @@
     color: var(--White);
     background-color: var(--Light-Pink);
     padding: 13px 25px;
+}
+.section-bestsellers
+{
+    margin-bottom: 62px;
+}
+.shipping-block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shipping-text
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Light-Pink);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.shipping-title
+{
+    font-family: "Georgian", serif;
+    font-size: 41px;
+    font-weight: 400;
+    color: var(--Gray-2);
+    margin-bottom: 55px;
+    position: relative;
+}
+.shipping-title::after
+{
+    content: '';
+    position: absolute;
+    background-image: url(/heading_left.217fc3d7.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    top: 5px;
+    right: 0;
+    left: -90px;
+    bottom: 0;
+}
+.shipping-title::before
+{
+    content: '';
+    position: absolute;
+    background-image: url(/heading_right.7072f3d3.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    top: 8px;
+    right: -90px;
+    left: 0;
+    bottom: 0;
+}
+.bestsellers-block
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 37px;
+}
+.bestsellers-item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bestsellers-img
+{
+    width: 280px;
+    margin-bottom: 10px;
+}
+.bestsellers-title
+{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    color: var(--Black-1);
+    margin-bottom: 13px;
+}
+.bestsellers_box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 15px;
+    margin-bottom: 13px;
+}
+.bestsellers-span
+{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--Gray-4);
+}
+.bestsellers_span
+{
+    font-size: 14px;
+    color: var(--Gray-4);
+    text-decoration-line: line-through;
+}
+.bestsellers-box_img
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5px;
 }
 
 /*# sourceMappingURL=/Azzana.e31bb0bc.css.map */

@@ -62,6 +62,7 @@ body
 :root 
 {
     --Black: #000000;
+    --Black-1: #131415;
     --White: #FFFFFF;
     --White-2: #ECF4F8;
     --White-3: #C4C4C4;
@@ -69,6 +70,7 @@ body
     --Gray-1: #454545;
     --Gray-2: #222222;
     --Gray-3: #3A3A3A;
+    --Gray-4: #818181;
     --Brown-color: #4A3021;
     --Mauve-color: #95565C;
     --Light-Pink: #BB83A7;
