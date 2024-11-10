@@ -260,7 +260,69 @@ function getSectionMain() {
   container.append(sectionBlock);
   return section;
 }
-},{"./sectionMain.css":"src/components/main/sectionMain.css"}],"src/page/pageMain/pageMain.css":[function(require,module,exports) {
+},{"./sectionMain.css":"src/components/main/sectionMain.css"}],"src/img/bestsellers/images1.png":[function(require,module,exports) {
+module.exports = "/images1.776f9379.png";
+},{}],"src/img/bestsellers/images2.png":[function(require,module,exports) {
+module.exports = "/images2.76cff5c1.png";
+},{}],"src/img/bestsellers/images3.png":[function(require,module,exports) {
+module.exports = "/images3.4e18b362.png";
+},{}],"src/img/bestsellers/images4.png":[function(require,module,exports) {
+module.exports = "/images4.5e4777da.png";
+},{}],"src/img/bestsellers/images5.png":[function(require,module,exports) {
+module.exports = "/images5.100013ee.png";
+},{}],"src/img/bestsellers/images6.png":[function(require,module,exports) {
+module.exports = "/images6.1f249f4d.png";
+},{}],"src/img/bestsellers/images7.png":[function(require,module,exports) {
+module.exports = "/images7.16711f54.png";
+},{}],"src/img/bestsellers/images8.png":[function(require,module,exports) {
+module.exports = "/images8.23444c22.png";
+},{}],"src/img/bestsellers/images9.svg":[function(require,module,exports) {
+module.exports = "/images9.f4feb621.svg";
+},{}],"src/img/bestsellers/images10.svg":[function(require,module,exports) {
+module.exports = "/images10.e4af1e8b.svg";
+},{}],"src/components/bestsellers/bestsellers.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../../img/bestsellers/heading_left.png":[["heading_left.217fc3d7.png","src/img/bestsellers/heading_left.png"],"src/img/bestsellers/heading_left.png"],"./../../img/bestsellers/heading_right.png":[["heading_right.7072f3d3.png","src/img/bestsellers/heading_right.png"],"src/img/bestsellers/heading_right.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/bestsellers/bestsellers.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getBestsellers = getBestsellers;
+var _images = _interopRequireDefault(require("../../img/bestsellers/images1.png"));
+var _images2 = _interopRequireDefault(require("../../img/bestsellers/images2.png"));
+var _images3 = _interopRequireDefault(require("../../img/bestsellers/images3.png"));
+var _images4 = _interopRequireDefault(require("../../img/bestsellers/images4.png"));
+var _images5 = _interopRequireDefault(require("../../img/bestsellers/images5.png"));
+var _images6 = _interopRequireDefault(require("../../img/bestsellers/images6.png"));
+var _images7 = _interopRequireDefault(require("../../img/bestsellers/images7.png"));
+var _images8 = _interopRequireDefault(require("../../img/bestsellers/images8.png"));
+var _images9 = _interopRequireDefault(require("../../img/bestsellers/images9.svg"));
+var _images10 = _interopRequireDefault(require("../../img/bestsellers/images10.svg"));
+require("./bestsellers.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+var bestsellersArray = [_images.default, _images2.default, _images3.default, _images4.default, _images5.default, _images6.default, _images7.default, _images8.default];
+function getBestsellers() {
+  var section = document.createElement("section");
+  section.className = "section-bestsellers";
+  var container = document.createElement("div");
+  container.className = "container";
+  var shippingBlock = document.createElement("div");
+  shippingBlock.className = "shipping-block";
+  shippingBlock.innerHTML = "\n        <p class=\"shipping-text\">FREE SHIPPING FR</p>\n        <h2 class=\"shipping-title\">The Bestsellers</h2>\n    ";
+  var bestsellersBlock = document.createElement("div");
+  bestsellersBlock.className = "bestsellers-block";
+  var listItems = bestsellersArray.map(function (imageSrc) {
+    return "\n       <ul class=\"bestsellers-list\">\n            <li class=\"bestsellers-item\">\n                <img class=\"bestsellers-img\" src=\"".concat(imageSrc, "\" alt=\"Person Image\">\n                <div class=\"bestsellers-box\">\n                    <h3 class=\"bestsellers-title\">NECKLACE \"MURATO\"</h3>\n                    <div class=\"bestsellers_box\">\n                        <span class=\"bestsellers-span\">$ 19.99</span>\n                        <span class=\"bestsellers_span\">$ 23.00</span>\n                    </div>\n                    <div class=\"bestsellers-box_img\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images9.default, "\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images9.default, "\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images9.default, "\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images9.default, "\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images10.default, "\">\n                    </div>\n                </div>\n            </li>\n       </ul>\n    ");
+  }).join("");
+  bestsellersBlock.innerHTML = listItems;
+  section.append(container);
+  container.append(shippingBlock, bestsellersBlock);
+  return section;
+}
+},{"../../img/bestsellers/images1.png":"src/img/bestsellers/images1.png","../../img/bestsellers/images2.png":"src/img/bestsellers/images2.png","../../img/bestsellers/images3.png":"src/img/bestsellers/images3.png","../../img/bestsellers/images4.png":"src/img/bestsellers/images4.png","../../img/bestsellers/images5.png":"src/img/bestsellers/images5.png","../../img/bestsellers/images6.png":"src/img/bestsellers/images6.png","../../img/bestsellers/images7.png":"src/img/bestsellers/images7.png","../../img/bestsellers/images8.png":"src/img/bestsellers/images8.png","../../img/bestsellers/images9.svg":"src/img/bestsellers/images9.svg","../../img/bestsellers/images10.svg":"src/img/bestsellers/images10.svg","./bestsellers.css":"src/components/bestsellers/bestsellers.css"}],"src/page/pageMain/pageMain.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -272,15 +334,17 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getPageMain = getPageMain;
 var _sectionMain = require("../../components/main/sectionMain");
+var _bestsellers = require("../../components/bestsellers/bestsellers");
 require("./pageMain.css");
 function getPageMain() {
   var main = document.createElement("main");
   main.className = "main";
   var sectionMain = (0, _sectionMain.getSectionMain)();
-  main.append(sectionMain);
+  var bestsellers = (0, _bestsellers.getBestsellers)();
+  main.append(sectionMain, bestsellers);
   return main;
 }
-},{"../../components/main/sectionMain":"src/components/main/sectionMain.js","./pageMain.css":"src/page/pageMain/pageMain.css"}],"index.js":[function(require,module,exports) {
+},{"../../components/main/sectionMain":"src/components/main/sectionMain.js","../../components/bestsellers/bestsellers":"src/components/bestsellers/bestsellers.js","./pageMain.css":"src/page/pageMain/pageMain.css"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _pageHeader = require("./src/page/pageHeader/pageHeader");
@@ -314,7 +378,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36241" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45517" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
