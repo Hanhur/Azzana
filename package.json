@@ -1,0 +1,18 @@
+{
+    "name": "azzana",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "homepage": "https://hanhur.github.io/Azzana/",
+    "scripts": {
+        "start": "parcel ./*.html",
+        "predeploy": "parcel build ./*.html --public-url /Azzana/",
+        "deploy": "gh-pages -d dist"
+    },
+    "author": "Vladimir Hanhur",
+    "license": "ISC",
+    "devDependencies": {
+        "gh-pages": "^6.1.1",
+        "parcel-bundler": "^1.12.5"
+    }
+}
