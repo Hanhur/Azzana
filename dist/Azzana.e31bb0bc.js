@@ -121,6 +121,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 module.exports = "/search.dca1606c.svg";
 },{}],"src/img/cosh.svg":[function(require,module,exports) {
 module.exports = "/cosh.9c55a7ab.svg";
+},{}],"src/img/logo.png":[function(require,module,exports) {
+module.exports = "/logo.a0487e91.png";
 },{}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
@@ -185,8 +187,11 @@ Object.defineProperty(exports, "__esModule", {
 exports.getPageHeader = getPageHeader;
 var _search = _interopRequireDefault(require("../../img/search.svg"));
 var _cosh = _interopRequireDefault(require("../../img/cosh.svg"));
+var _logo = _interopRequireDefault(require("../../img/logo.png"));
 require("./pageHeader.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+var headreArray_1 = ["Home ", "Necklaces", "Braceltes", "Rings"];
+var headreArray_2 = ["Earrings", "Ankle Bracelets", "All", "Track My Oreder"];
 function getPageHeader() {
   var header = document.createElement("header");
   header.className = "page-header";
@@ -195,11 +200,43 @@ function getPageHeader() {
   headerDiv.innerHTML = "\n        <p class=\"header-div-text\">CHRISTMAS SALE: 2 JEWELERY PURCHASED, THE 3rd FREE! / FREE DELIVERY FR</p>\n        <img class=\"header-div-img\" src=\"".concat(_search.default, "\">\n        <p class=\"header-div_text\">SEARCH</p>\n        <img class=\"header-div_img\" src=\"").concat(_cosh.default, "\">\n    ");
   var container = document.createElement("div");
   container.className = "container";
+  var headerBlock = document.createElement("div");
+  headerBlock.className = "header-block";
+  var headerList_1 = document.createElement("ul");
+  headerList_1.className = "header-list";
+  headreArray_1.forEach(function (item) {
+    var items = document.createElement("li");
+    items.className = "header-items";
+    var link = document.createElement("a");
+    link.className = "header-link";
+    link.href = "#";
+    headerList_1.appendChild(items);
+    items.appendChild(link);
+    link.innerHTML = item;
+  });
+  var headerList_2 = document.createElement("ul");
+  headerList_2.className = "header-list";
+  headreArray_2.forEach(function (item) {
+    var items = document.createElement("li");
+    items.className = "header-items";
+    var link = document.createElement("a");
+    link.className = "header-link";
+    link.href = "#";
+    headerList_2.appendChild(items);
+    items.appendChild(link);
+    link.innerHTML = item;
+  });
+  var headerImg = document.createElement("img");
+  headerImg.className = "header-img";
+  headerImg.src = _logo.default;
+  headerImg.alt = "Azzana";
   header.append(headerDiv);
   header.append(container);
+  container.append(headerBlock);
+  headerBlock.append(headerList_1, headerImg, headerList_2);
   return header;
 }
-},{"../../img/search.svg":"src/img/search.svg","../../img/cosh.svg":"src/img/cosh.svg","./pageHeader.css":"src/page/pageHeader/pageHeader.css"}],"index.js":[function(require,module,exports) {
+},{"../../img/search.svg":"src/img/search.svg","../../img/cosh.svg":"src/img/cosh.svg","../../img/logo.png":"src/img/logo.png","./pageHeader.css":"src/page/pageHeader/pageHeader.css"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _pageHeader = require("./src/page/pageHeader/pageHeader");
@@ -231,7 +268,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39041" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39061" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

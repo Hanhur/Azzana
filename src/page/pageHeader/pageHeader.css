@@ -5,6 +5,7 @@
     align-items: center;
     background-color: var(--Light-Pink);
     padding: 12px 0;
+    flex-wrap: wrap;
 }
 .header-div-text
 {
@@ -28,4 +29,18 @@
 .header-div_img
 {
     width: 18px;
+}
+/* ========================================================== */
+.header-block
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+.header-list
+{
+    display: flex;
+    gap: 0 50px;
 }
