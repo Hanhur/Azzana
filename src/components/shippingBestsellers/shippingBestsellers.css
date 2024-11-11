@@ -1,0 +1,71 @@
+.section-shipping-bestsellers
+{
+    margin-bottom: 63px;
+}
+.block-inner
+{
+    display: flex;
+    align-items: center;
+}
+.shipping-bestsellers-block
+{
+    display: flex;
+    flex-direction: column;
+    padding: 55px 55px 68px 74px;
+    background-color: var(--White-4);
+    width: 644px;
+}
+.shipping-bestsellers-text
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Light-Pink);
+    margin-bottom: 13px;
+}
+.shipping-bestsellers-title
+{
+    font-family: "Georgian", serif; 
+    font-size: 41px;
+    font-weight: 400;
+    color: var(--Gray-2);
+    margin-bottom: 13px;
+}
+.shipping-bestsellers_text
+{
+
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--Gray-1);
+    width: 515px;
+    margin-bottom: 22px;
+}
+.shipping-bestsellers-box
+{
+    display: flex;
+    align-items: center;
+}
+.shipping-bestsellers-span
+{
+    font-family: "Georgian", serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: var(--Light-Pink);
+    width: 38px;
+    margin-right: 10px;
+}
+.shipping-bestsellers_box
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.shipping-bestsellers__img
+{
+    width: 100%;
+    height: 337px;
+}
+.shipping-bestsellers_img
+{
+    width: 100%;
+}
