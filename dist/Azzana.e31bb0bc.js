@@ -405,7 +405,44 @@ function getShippingBestsellers() {
   blockInner.append(shippingBestsellersBlock, BestsellersBlock);
   return section;
 }
-},{"../../img/vector.svg":"src/img/vector.svg","../../img/shippingBestsellers/images1.png":"src/img/shippingBestsellers/images1.png","../../img/shippingBestsellers/images2.png":"src/img/shippingBestsellers/images2.png","../../img/shippingBestsellers/images3.png":"src/img/shippingBestsellers/images3.png","../../img/shippingBestsellers/images4.png":"src/img/shippingBestsellers/images4.png","../../img/shippingBestsellers/images5.png":"src/img/shippingBestsellers/images5.png","./shippingBestsellers.css":"src/components/shippingBestsellers/shippingBestsellers.css"}],"src/page/pageMain/pageMain.css":[function(require,module,exports) {
+},{"../../img/vector.svg":"src/img/vector.svg","../../img/shippingBestsellers/images1.png":"src/img/shippingBestsellers/images1.png","../../img/shippingBestsellers/images2.png":"src/img/shippingBestsellers/images2.png","../../img/shippingBestsellers/images3.png":"src/img/shippingBestsellers/images3.png","../../img/shippingBestsellers/images4.png":"src/img/shippingBestsellers/images4.png","../../img/shippingBestsellers/images5.png":"src/img/shippingBestsellers/images5.png","./shippingBestsellers.css":"src/components/shippingBestsellers/shippingBestsellers.css"}],"src/img/servic/images1.svg":[function(require,module,exports) {
+module.exports = "/images1.85978f87.svg";
+},{}],"src/img/servic/images2.svg":[function(require,module,exports) {
+module.exports = "/images2.0493ea55.svg";
+},{}],"src/img/servic/images3.svg":[function(require,module,exports) {
+module.exports = "/images3.e75171ad.svg";
+},{}],"src/img/servic/images4.svg":[function(require,module,exports) {
+module.exports = "/images4.16b3f61d.svg";
+},{}],"src/components/servic/servic.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../../img/servic/bedrop.png":[["bedrop.0b429c44.png","src/img/servic/bedrop.png"],"src/img/servic/bedrop.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/servic/servic.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getServic = getServic;
+var _images = _interopRequireDefault(require("../../img/servic/images1.svg"));
+var _images2 = _interopRequireDefault(require("../../img/servic/images2.svg"));
+var _images3 = _interopRequireDefault(require("../../img/servic/images3.svg"));
+var _images4 = _interopRequireDefault(require("../../img/servic/images4.svg"));
+require("./servic.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getServic() {
+  var section = document.createElement("section");
+  section.className = "section-servic";
+  var container = document.createElement("div");
+  container.className = "container";
+  var servicBlock = document.createElement("div");
+  servicBlock.className = "servic-block";
+  servicBlock.innerHTML = "\n        <div class=\"servic-box\">\n            <img class=\"servic-img\" src=\"".concat(_images.default, "\">\n            <p class=\"servic-text\">FREE TRACKED DELIVERY</p>\n        </div>\n        <div class=\"servic-box\">\n            <img class=\"servic-img\" src=\"").concat(_images2.default, "\">\n            <p class=\"servic-text\">QUICK RETURNS AND EXCHANGES</p>\n        </div>\n        <div class=\"servic-box\">\n            <img class=\"servic-img\" src=\"").concat(_images3.default, "\">\n            <p class=\"servic-text\">24/7  CUSTOMER SERVICE</p>\n        </div>\n        <div class=\"servic-box\">\n            <img class=\"servic-img\" src=\"").concat(_images4.default, "\">\n            <p class=\"servic-text\">100% SECURE PAYMENT</p>\n        </div>\n    ");
+  section.append(container);
+  container.append(servicBlock);
+  return section;
+}
+},{"../../img/servic/images1.svg":"src/img/servic/images1.svg","../../img/servic/images2.svg":"src/img/servic/images2.svg","../../img/servic/images3.svg":"src/img/servic/images3.svg","../../img/servic/images4.svg":"src/img/servic/images4.svg","./servic.css":"src/components/servic/servic.css"}],"src/page/pageMain/pageMain.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -420,6 +457,7 @@ var _sectionMain = require("../../components/main/sectionMain");
 var _bestsellers = require("../../components/bestsellers/bestsellers");
 var _values = require("../../components/values/values");
 var _shippingBestsellers = require("../../components/shippingBestsellers/shippingBestsellers");
+var _servic = require("../../components/servic/servic");
 require("./pageMain.css");
 function getPageMain() {
   var main = document.createElement("main");
@@ -428,10 +466,11 @@ function getPageMain() {
   var bestsellers = (0, _bestsellers.getBestsellers)();
   var values = (0, _values.getValues)();
   var shippingBestsellers = (0, _shippingBestsellers.getShippingBestsellers)();
-  main.append(sectionMain, bestsellers, values, shippingBestsellers);
+  var servic = (0, _servic.getServic)();
+  main.append(sectionMain, bestsellers, values, shippingBestsellers, servic);
   return main;
 }
-},{"../../components/main/sectionMain":"src/components/main/sectionMain.js","../../components/bestsellers/bestsellers":"src/components/bestsellers/bestsellers.js","../../components/values/values":"src/components/values/values.js","../../components/shippingBestsellers/shippingBestsellers":"src/components/shippingBestsellers/shippingBestsellers.js","./pageMain.css":"src/page/pageMain/pageMain.css"}],"index.js":[function(require,module,exports) {
+},{"../../components/main/sectionMain":"src/components/main/sectionMain.js","../../components/bestsellers/bestsellers":"src/components/bestsellers/bestsellers.js","../../components/values/values":"src/components/values/values.js","../../components/shippingBestsellers/shippingBestsellers":"src/components/shippingBestsellers/shippingBestsellers.js","../../components/servic/servic":"src/components/servic/servic.js","./pageMain.css":"src/page/pageMain/pageMain.css"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _pageHeader = require("./src/page/pageHeader/pageHeader");
@@ -465,7 +504,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40015" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34329" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

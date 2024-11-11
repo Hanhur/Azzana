@@ -1,0 +1,42 @@
+.section-servic
+{
+    margin-bottom: 48px;
+}
+.servic-block
+{
+    background-image: url(../../img/servic/bedrop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    padding: 30px 70px;
+    gap: 0 92px;
+}
+.servic-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px 0;
+    position: relative;
+}
+.servic-img
+{
+    width: 58px;
+}
+.servic-text
+{
+    font-weight: 500;
+    color: var(--White);
+}
+.servic-box:nth-child(n + 2):before
+{
+    content: '';
+    position: absolute;
+    left: -45px;
+    width: 1px;
+    height: 131px;
+    border: 1px solid var(--White);
+    opacity: 0.3;
+}
