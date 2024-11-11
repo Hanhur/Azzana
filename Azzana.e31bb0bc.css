@@ -356,9 +356,11 @@
 .servic-block
 {
     background-image: url(/bedrop.0b429c44.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     padding: 30px 70px;
-    /* background-color: var(--Light-Pink); */
     gap: 0 92px;
 }
 .servic-box
@@ -388,6 +390,88 @@
     height: 131px;
     border: 1px solid var(--White);
     opacity: 0.3;
+}
+.shop-block-title
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Light-Pink);
+    text-transform: uppercase;
+    width: 188px;
+    margin-bottom: 21px;
+}
+.shop-block-text
+{
+    line-height: 2;
+    color: var(--Gray-3);
+    width: 300px;
+    margin-bottom: 18px;
+}
+.shop-block-list
+{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+.twitter
+{
+    padding-top: 5px;
+}
+.menu-block-title
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Light-Pink);
+    margin-bottom: 21px;
+    text-transform: uppercase;
+}
+.menu-block-list
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    color: var(--Gray-3);
+}
+.support-block-title
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Light-Pink);
+    margin-bottom: 21px;
+    text-transform: uppercase;
+}
+.support-block-list
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    color: var(--Gray-3);
+}
+.reachable-block-title
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Light-Pink);
+    margin-bottom: 21px;
+    text-transform: uppercase;
+}
+.reachable-block-text
+{
+    line-height: 1.8;
+    color: var(--Gray-3);
+    width: 270px;
+    margin-bottom: 30px;
+}
+.footer
+{
+    background-color: var(--White-4);
+    padding: 48px 0 45px;
+}
+.footer-block
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 70px;
 }
 
 /*# sourceMappingURL=/Azzana.e31bb0bc.css.map */
