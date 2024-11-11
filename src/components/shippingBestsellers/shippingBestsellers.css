@@ -6,21 +6,22 @@
 {
     display: flex;
     align-items: center;
+    position: relative;
 }
 .shipping-bestsellers-block
 {
     display: flex;
     flex-direction: column;
-    padding: 55px 55px 68px 74px;
+    padding: 55px 55px 50px 74px;
     background-color: var(--White-4);
     width: 644px;
+    gap: 22px 0;
 }
 .shipping-bestsellers-text
 {
     font-size: 18px;
     font-weight: 600;
     color: var(--Light-Pink);
-    margin-bottom: 13px;
 }
 .shipping-bestsellers-title
 {
@@ -28,7 +29,6 @@
     font-size: 41px;
     font-weight: 400;
     color: var(--Gray-2);
-    margin-bottom: 13px;
 }
 .shipping-bestsellers_text
 {
@@ -38,7 +38,6 @@
     line-height: 1.5;
     color: var(--Gray-1);
     width: 515px;
-    margin-bottom: 22px;
 }
 .shipping-bestsellers-box
 {
@@ -68,4 +67,32 @@
 .shipping-bestsellers_img
 {
     width: 100%;
+}
+.shipping__bestsellers
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    content: '';
+    position: absolute;
+    top: 460px;
+    left: 240px;
+}
+.rings
+{
+    font-family: "Georgian", serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--White);
+    margin-bottom: 25px;
+}
+.button
+{
+    font-family: "Georgian", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--Light-Pink);
+    background-color: var(--White);
+    padding: 9px 31px;
 }

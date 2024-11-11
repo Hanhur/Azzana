@@ -393,7 +393,7 @@ function getShippingBestsellers() {
   blockInner.className = "block-inner";
   var shippingBestsellersBlock = document.createElement("div");
   shippingBestsellersBlock.className = "shipping-bestsellers";
-  shippingBestsellersBlock.innerHTML = "\n        <div class=\"shipping-bestsellers-block\">\n            <p class=\"shipping-bestsellers-text\">FREE SHIPPING FR</p>\n            <h2 class=\"shipping-bestsellers-title\">The Bestsellers</h2>\n            <p class=\"shipping-bestsellers_text\">\n                At Azzana, we believe that you deserve the best, and that you should\n                not choose between quality, affordable prices,and real values.At Azzana,\n                we believe that you deserve the best, and that you should not choose\n                between quality, affordable prices, and real values. At Azzana, we believe\n                that you deserve the best.\n            </p>\n            <div class=\"shipping-bestsellers-box\">\n                <span class=\"shipping-bestsellers-span\">VIEW</span>\n                <img class=\"shipping-bestsellers-img\" src=\"".concat(_vector.default, "\" width=\"30\">\n            </div>\n        </div>\n        <img class=\"shipping-bestsellers_img\" src=\"").concat(_images3.default, "\">\n    ");
+  shippingBestsellersBlock.innerHTML = "\n        <div class=\"shipping-bestsellers-block\">\n            <p class=\"shipping-bestsellers-text\">FREE SHIPPING FR</p>\n            <h2 class=\"shipping-bestsellers-title\">The Bestsellers</h2>\n            <p class=\"shipping-bestsellers_text\">\n                At Azzana, we believe that you deserve the best, and that you should\n                not choose between quality, affordable prices,and real values.At Azzana,\n                we believe that you deserve the best, and that you should not choose\n                between quality, affordable prices, and real values. At Azzana, we believe\n                that you deserve the best.\n            </p>\n            <div class=\"shipping-bestsellers-box\">\n                <span class=\"shipping-bestsellers-span\">VIEW</span>\n                <img class=\"shipping-bestsellers-img\" src=\"".concat(_vector.default, "\" width=\"30\">\n            </div>\n        </div>\n        <img class=\"shipping-bestsellers_img\" src=\"").concat(_images3.default, "\">\n        <div class=\"shipping__bestsellers\">\n            <p class=\"rings\">ear rings</p>\n            <button class=\"button\">Discover</button>\n        </div>\n    ");
   var BestsellersBlock = document.createElement("div");
   BestsellersBlock.className = "shipping-bestsellers_box";
   var listItems = shippingBestsellersArray.map(function (imageSrc) {
@@ -465,7 +465,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44779" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40015" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

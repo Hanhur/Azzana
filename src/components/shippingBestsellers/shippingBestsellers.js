@@ -39,6 +39,10 @@ export function getShippingBestsellers()
             </div>
         </div>
         <img class="shipping-bestsellers_img" src="${images3}">
+        <div class="shipping__bestsellers">
+            <p class="rings">ear rings</p>
+            <button class="button">Discover</button>
+        </div>
     `;
 
     const BestsellersBlock = document.createElement("div");
