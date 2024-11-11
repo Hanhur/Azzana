@@ -328,7 +328,31 @@ function getBestsellers() {
   container.append(shippingBlock, bestsellersBlock, bestsellersButton);
   return section;
 }
-},{"../../img/bestsellers/images1.png":"src/img/bestsellers/images1.png","../../img/bestsellers/images2.png":"src/img/bestsellers/images2.png","../../img/bestsellers/images3.png":"src/img/bestsellers/images3.png","../../img/bestsellers/images4.png":"src/img/bestsellers/images4.png","../../img/bestsellers/images5.png":"src/img/bestsellers/images5.png","../../img/bestsellers/images6.png":"src/img/bestsellers/images6.png","../../img/bestsellers/images7.png":"src/img/bestsellers/images7.png","../../img/bestsellers/images8.png":"src/img/bestsellers/images8.png","../../img/bestsellers/images9.svg":"src/img/bestsellers/images9.svg","../../img/bestsellers/images10.svg":"src/img/bestsellers/images10.svg","../../img/bestsellers/ellipse.png":"src/img/bestsellers/ellipse.png","./bestsellers.css":"src/components/bestsellers/bestsellers.css"}],"src/page/pageMain/pageMain.css":[function(require,module,exports) {
+},{"../../img/bestsellers/images1.png":"src/img/bestsellers/images1.png","../../img/bestsellers/images2.png":"src/img/bestsellers/images2.png","../../img/bestsellers/images3.png":"src/img/bestsellers/images3.png","../../img/bestsellers/images4.png":"src/img/bestsellers/images4.png","../../img/bestsellers/images5.png":"src/img/bestsellers/images5.png","../../img/bestsellers/images6.png":"src/img/bestsellers/images6.png","../../img/bestsellers/images7.png":"src/img/bestsellers/images7.png","../../img/bestsellers/images8.png":"src/img/bestsellers/images8.png","../../img/bestsellers/images9.svg":"src/img/bestsellers/images9.svg","../../img/bestsellers/images10.svg":"src/img/bestsellers/images10.svg","../../img/bestsellers/ellipse.png":"src/img/bestsellers/ellipse.png","./bestsellers.css":"src/components/bestsellers/bestsellers.css"}],"src/components/values/values.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../../img/values-bg.png":[["values-bg.51bd731b.png","src/img/values-bg.png"],"src/img/values-bg.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/values/values.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getValues = getValues;
+require("./values.css");
+function getValues() {
+  var section = document.createElement("section");
+  section.className = "section-values";
+  var container = document.createElement("div");
+  container.className = "container";
+  var valuesBlock = document.createElement("div");
+  valuesBlock.className = "values-block";
+  valuesBlock.innerHTML = "\n        <h2 class=\"values-title\">\n            OUR \n            <span class=\"values-span\">VALUES</span>\n        </h2>\n        <p class=\"values-text\">\n            At Azzana, we believe that you deserve the best, and that you\n            should not choose between quality, affordable prices,\n            and real values.\n        </p>\n        <p class=\"values-text\">\n            Quality has never been so affordable thanks to our collection of\n            more than 200 minimalist jewels, ready to accompany you\n            everywhere! :)\n        </p>\n    ";
+  section.append(container);
+  container.append(valuesBlock);
+  return section;
+}
+},{"./values.css":"src/components/values/values.css"}],"src/page/pageMain/pageMain.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -341,16 +365,18 @@ Object.defineProperty(exports, "__esModule", {
 exports.getPageMain = getPageMain;
 var _sectionMain = require("../../components/main/sectionMain");
 var _bestsellers = require("../../components/bestsellers/bestsellers");
+var _values = require("../../components/values/values");
 require("./pageMain.css");
 function getPageMain() {
   var main = document.createElement("main");
   main.className = "main";
   var sectionMain = (0, _sectionMain.getSectionMain)();
   var bestsellers = (0, _bestsellers.getBestsellers)();
-  main.append(sectionMain, bestsellers);
+  var values = (0, _values.getValues)();
+  main.append(sectionMain, bestsellers, values);
   return main;
 }
-},{"../../components/main/sectionMain":"src/components/main/sectionMain.js","../../components/bestsellers/bestsellers":"src/components/bestsellers/bestsellers.js","./pageMain.css":"src/page/pageMain/pageMain.css"}],"index.js":[function(require,module,exports) {
+},{"../../components/main/sectionMain":"src/components/main/sectionMain.js","../../components/bestsellers/bestsellers":"src/components/bestsellers/bestsellers.js","../../components/values/values":"src/components/values/values.js","./pageMain.css":"src/page/pageMain/pageMain.css"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _pageHeader = require("./src/page/pageHeader/pageHeader");
@@ -384,7 +410,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46363" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41643" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
