@@ -280,6 +280,8 @@ module.exports = "/images8.23444c22.png";
 module.exports = "/images9.f4feb621.svg";
 },{}],"src/img/bestsellers/images10.svg":[function(require,module,exports) {
 module.exports = "/images10.e4af1e8b.svg";
+},{}],"src/img/bestsellers/ellipse.png":[function(require,module,exports) {
+module.exports = "/ellipse.8d1232e1.png";
 },{}],"src/components/bestsellers/bestsellers.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
@@ -301,6 +303,7 @@ var _images7 = _interopRequireDefault(require("../../img/bestsellers/images7.png
 var _images8 = _interopRequireDefault(require("../../img/bestsellers/images8.png"));
 var _images9 = _interopRequireDefault(require("../../img/bestsellers/images9.svg"));
 var _images10 = _interopRequireDefault(require("../../img/bestsellers/images10.svg"));
+var _ellipse = _interopRequireDefault(require("../../img/bestsellers/ellipse.png"));
 require("./bestsellers.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 var bestsellersArray = [_images.default, _images2.default, _images3.default, _images4.default, _images5.default, _images6.default, _images7.default, _images8.default];
@@ -315,14 +318,17 @@ function getBestsellers() {
   var bestsellersBlock = document.createElement("div");
   bestsellersBlock.className = "bestsellers-block";
   var listItems = bestsellersArray.map(function (imageSrc) {
-    return "\n       <ul class=\"bestsellers-list\">\n            <li class=\"bestsellers-item\">\n                <img class=\"bestsellers-img\" src=\"".concat(imageSrc, "\" alt=\"Person Image\">\n                <div class=\"bestsellers-box\">\n                    <h3 class=\"bestsellers-title\">NECKLACE \"MURATO\"</h3>\n                    <div class=\"bestsellers_box\">\n                        <span class=\"bestsellers-span\">$ 19.99</span>\n                        <span class=\"bestsellers_span\">$ 23.00</span>\n                    </div>\n                    <div class=\"bestsellers-box_img\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images9.default, "\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images9.default, "\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images9.default, "\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images9.default, "\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images10.default, "\">\n                    </div>\n                </div>\n            </li>\n       </ul>\n    ");
+    return "\n       <ul class=\"bestsellers-list\">\n            <li class=\"bestsellers-item\">\n                <img class=\"bestsellers-ellipse\" src=\"".concat(_ellipse.default, "\">\n                <img class=\"bestsellers-img\" src=\"").concat(imageSrc, "\" alt=\"Person Image\">\n                <div class=\"bestsellers-box\">\n                    <h3 class=\"bestsellers-title\">NECKLACE \"MURATO\"</h3>\n                    <div class=\"bestsellers_box\">\n                        <span class=\"bestsellers-span\">$ 19.99</span>\n                        <span class=\"bestsellers_span\">$ 23.00</span>\n                    </div>\n                    <div class=\"bestsellers-box_img\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images9.default, "\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images9.default, "\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images9.default, "\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images9.default, "\">\n                        <img class=\"bestsellers_img\" src=\"").concat(_images10.default, "\">\n                    </div>\n                </div>\n            </li>\n       </ul>\n    ");
   }).join("");
+  var bestsellersButton = document.createElement("button");
+  bestsellersButton.className = "bestsellers-btn";
+  bestsellersButton.textContent = "See All Jewelery";
   bestsellersBlock.innerHTML = listItems;
   section.append(container);
-  container.append(shippingBlock, bestsellersBlock);
+  container.append(shippingBlock, bestsellersBlock, bestsellersButton);
   return section;
 }
-},{"../../img/bestsellers/images1.png":"src/img/bestsellers/images1.png","../../img/bestsellers/images2.png":"src/img/bestsellers/images2.png","../../img/bestsellers/images3.png":"src/img/bestsellers/images3.png","../../img/bestsellers/images4.png":"src/img/bestsellers/images4.png","../../img/bestsellers/images5.png":"src/img/bestsellers/images5.png","../../img/bestsellers/images6.png":"src/img/bestsellers/images6.png","../../img/bestsellers/images7.png":"src/img/bestsellers/images7.png","../../img/bestsellers/images8.png":"src/img/bestsellers/images8.png","../../img/bestsellers/images9.svg":"src/img/bestsellers/images9.svg","../../img/bestsellers/images10.svg":"src/img/bestsellers/images10.svg","./bestsellers.css":"src/components/bestsellers/bestsellers.css"}],"src/page/pageMain/pageMain.css":[function(require,module,exports) {
+},{"../../img/bestsellers/images1.png":"src/img/bestsellers/images1.png","../../img/bestsellers/images2.png":"src/img/bestsellers/images2.png","../../img/bestsellers/images3.png":"src/img/bestsellers/images3.png","../../img/bestsellers/images4.png":"src/img/bestsellers/images4.png","../../img/bestsellers/images5.png":"src/img/bestsellers/images5.png","../../img/bestsellers/images6.png":"src/img/bestsellers/images6.png","../../img/bestsellers/images7.png":"src/img/bestsellers/images7.png","../../img/bestsellers/images8.png":"src/img/bestsellers/images8.png","../../img/bestsellers/images9.svg":"src/img/bestsellers/images9.svg","../../img/bestsellers/images10.svg":"src/img/bestsellers/images10.svg","../../img/bestsellers/ellipse.png":"src/img/bestsellers/ellipse.png","./bestsellers.css":"src/components/bestsellers/bestsellers.css"}],"src/page/pageMain/pageMain.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -378,7 +384,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45517" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46363" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
