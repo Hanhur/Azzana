@@ -352,7 +352,60 @@ function getValues() {
   container.append(valuesBlock);
   return section;
 }
-},{"./values.css":"src/components/values/values.css"}],"src/page/pageMain/pageMain.css":[function(require,module,exports) {
+},{"./values.css":"src/components/values/values.css"}],"src/img/vector.svg":[function(require,module,exports) {
+module.exports = "/vector.cabdd857.svg";
+},{}],"src/img/shippingBestsellers/images1.png":[function(require,module,exports) {
+module.exports = "/images1.0af1a68c.png";
+},{}],"src/img/shippingBestsellers/images2.png":[function(require,module,exports) {
+module.exports = "/images2.81fcd651.png";
+},{}],"src/img/shippingBestsellers/images3.png":[function(require,module,exports) {
+module.exports = "/images3.18fb11a2.png";
+},{}],"src/img/shippingBestsellers/images4.png":[function(require,module,exports) {
+module.exports = "/images4.dfcf9524.png";
+},{}],"src/img/shippingBestsellers/images5.png":[function(require,module,exports) {
+module.exports = "/images5.80432cf0.png";
+},{}],"src/components/shippingBestsellers/shippingBestsellers.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/shippingBestsellers/shippingBestsellers.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getShippingBestsellers = getShippingBestsellers;
+var _vector = _interopRequireDefault(require("../../img/vector.svg"));
+var _images = _interopRequireDefault(require("../../img/shippingBestsellers/images1.png"));
+var _images2 = _interopRequireDefault(require("../../img/shippingBestsellers/images2.png"));
+var _images3 = _interopRequireDefault(require("../../img/shippingBestsellers/images3.png"));
+var _images4 = _interopRequireDefault(require("../../img/shippingBestsellers/images4.png"));
+var _images5 = _interopRequireDefault(require("../../img/shippingBestsellers/images5.png"));
+require("./shippingBestsellers.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+var shippingBestsellersArray = [_images.default, _images2.default, _images4.default, _images5.default];
+function getShippingBestsellers() {
+  var section = document.createElement("section");
+  section.className = "section-shipping-bestsellers";
+  var container = document.createElement("div");
+  container.className = "container";
+  var blockInner = document.createElement("div");
+  blockInner.className = "block-inner";
+  var shippingBestsellersBlock = document.createElement("div");
+  shippingBestsellersBlock.className = "shipping-bestsellers";
+  shippingBestsellersBlock.innerHTML = "\n        <div class=\"shipping-bestsellers-block\">\n            <p class=\"shipping-bestsellers-text\">FREE SHIPPING FR</p>\n            <h2 class=\"shipping-bestsellers-title\">The Bestsellers</h2>\n            <p class=\"shipping-bestsellers_text\">\n                At Azzana, we believe that you deserve the best, and that you should\n                not choose between quality, affordable prices,and real values.At Azzana,\n                we believe that you deserve the best, and that you should not choose\n                between quality, affordable prices, and real values. At Azzana, we believe\n                that you deserve the best.\n            </p>\n            <div class=\"shipping-bestsellers-box\">\n                <span class=\"shipping-bestsellers-span\">VIEW</span>\n                <img class=\"shipping-bestsellers-img\" src=\"".concat(_vector.default, "\" width=\"30\">\n            </div>\n        </div>\n        <img class=\"shipping-bestsellers_img\" src=\"").concat(_images3.default, "\">\n    ");
+  var BestsellersBlock = document.createElement("div");
+  BestsellersBlock.className = "shipping-bestsellers_box";
+  var listItems = shippingBestsellersArray.map(function (imageSrc) {
+    return "\n        <img class=\"shipping-bestsellers__img\" src=\"".concat(imageSrc, "\" alt=\"Person Image\">\n    ");
+  }).join("");
+  BestsellersBlock.innerHTML = listItems;
+  section.append(container);
+  container.append(blockInner);
+  blockInner.append(shippingBestsellersBlock, BestsellersBlock);
+  return section;
+}
+},{"../../img/vector.svg":"src/img/vector.svg","../../img/shippingBestsellers/images1.png":"src/img/shippingBestsellers/images1.png","../../img/shippingBestsellers/images2.png":"src/img/shippingBestsellers/images2.png","../../img/shippingBestsellers/images3.png":"src/img/shippingBestsellers/images3.png","../../img/shippingBestsellers/images4.png":"src/img/shippingBestsellers/images4.png","../../img/shippingBestsellers/images5.png":"src/img/shippingBestsellers/images5.png","./shippingBestsellers.css":"src/components/shippingBestsellers/shippingBestsellers.css"}],"src/page/pageMain/pageMain.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -366,6 +419,7 @@ exports.getPageMain = getPageMain;
 var _sectionMain = require("../../components/main/sectionMain");
 var _bestsellers = require("../../components/bestsellers/bestsellers");
 var _values = require("../../components/values/values");
+var _shippingBestsellers = require("../../components/shippingBestsellers/shippingBestsellers");
 require("./pageMain.css");
 function getPageMain() {
   var main = document.createElement("main");
@@ -373,10 +427,11 @@ function getPageMain() {
   var sectionMain = (0, _sectionMain.getSectionMain)();
   var bestsellers = (0, _bestsellers.getBestsellers)();
   var values = (0, _values.getValues)();
-  main.append(sectionMain, bestsellers, values);
+  var shippingBestsellers = (0, _shippingBestsellers.getShippingBestsellers)();
+  main.append(sectionMain, bestsellers, values, shippingBestsellers);
   return main;
 }
-},{"../../components/main/sectionMain":"src/components/main/sectionMain.js","../../components/bestsellers/bestsellers":"src/components/bestsellers/bestsellers.js","../../components/values/values":"src/components/values/values.js","./pageMain.css":"src/page/pageMain/pageMain.css"}],"index.js":[function(require,module,exports) {
+},{"../../components/main/sectionMain":"src/components/main/sectionMain.js","../../components/bestsellers/bestsellers":"src/components/bestsellers/bestsellers.js","../../components/values/values":"src/components/values/values.js","../../components/shippingBestsellers/shippingBestsellers":"src/components/shippingBestsellers/shippingBestsellers.js","./pageMain.css":"src/page/pageMain/pageMain.css"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _pageHeader = require("./src/page/pageHeader/pageHeader");
@@ -410,7 +465,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41643" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44779" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
