@@ -27,7 +27,7 @@ export function getPageFooter()
         shop,
         menu,
         support,
-        reachable
+        reachable,
     );
 
     return footer;
