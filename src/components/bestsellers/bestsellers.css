@@ -54,16 +54,28 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 37px;
+    margin-bottom: 64px;
 }
 .bestsellers-item
 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 0px 67px 5px #00000014;
+    position: relative;
+}
+.bestsellers-ellipse
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 9px;
 }
 .bestsellers-img
 {
-    width: 280px;
+    width: 100%;
+    height: 280px;
     margin-bottom: 10px;
 }
 .bestsellers-title
@@ -102,4 +114,16 @@
     justify-content: center;
     align-items: center;
     gap: 0 5px;
+    margin-bottom: 12px;
+}
+.bestsellers-btn
+{
+    font-family: "Georgian", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--Light-Pink);
+    border: 1.7px solid var(--Light-Pink);
+    padding: 13px 43px;
+    display: block;
+    margin: 0 auto;
 }

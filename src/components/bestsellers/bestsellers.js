@@ -8,6 +8,7 @@ import images7 from "../../img/bestsellers/images7.png";
 import images8 from "../../img/bestsellers/images8.png";
 import images9 from "../../img/bestsellers/images9.svg";
 import images10 from "../../img/bestsellers/images10.svg";
+import ellipse from "../../img/bestsellers/ellipse.png";
 
 import "./bestsellers.css";
 
@@ -34,6 +35,7 @@ export function getBestsellers()
     const listItems = bestsellersArray.map(imageSrc => `
        <ul class="bestsellers-list">
             <li class="bestsellers-item">
+                <img class="bestsellers-ellipse" src="${ellipse}">
                 <img class="bestsellers-img" src="${imageSrc}" alt="Person Image">
                 <div class="bestsellers-box">
                     <h3 class="bestsellers-title">NECKLACE "MURATO"</h3>
@@ -53,11 +55,15 @@ export function getBestsellers()
        </ul>
     `).join("");
 
+    const bestsellersButton = document.createElement("button");
+    bestsellersButton.className = "bestsellers-btn";
+    bestsellersButton.textContent = "See All Jewelery";
+
 
     bestsellersBlock.innerHTML = listItems;
 
     section.append(container);
-    container.append(shippingBlock, bestsellersBlock);
+    container.append(shippingBlock, bestsellersBlock, bestsellersButton);
 
     return section;
 }
