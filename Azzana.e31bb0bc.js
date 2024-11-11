@@ -587,18 +587,57 @@ function getPageFooter() {
   footerBlock.append(shop, menu, support, reachable);
   return footer;
 }
-},{"../../components/footers/aboutShop/aboutShop":"src/components/footers/aboutShop/aboutShop.js","../../components/footers/menu/menu":"src/components/footers/menu/menu.js","../../components/footers/support/support":"src/components/footers/support/support.js","../../components/footers/reachable/reachable":"src/components/footers/reachable/reachable.js","./pageFooter.css":"src/page/pageFooter/pageFooter.css"}],"index.js":[function(require,module,exports) {
+},{"../../components/footers/aboutShop/aboutShop":"src/components/footers/aboutShop/aboutShop.js","../../components/footers/menu/menu":"src/components/footers/menu/menu.js","../../components/footers/support/support":"src/components/footers/support/support.js","../../components/footers/reachable/reachable":"src/components/footers/reachable/reachable.js","./pageFooter.css":"src/page/pageFooter/pageFooter.css"}],"src/img/visa.svg":[function(require,module,exports) {
+module.exports = "/visa.995f34f2.svg";
+},{}],"src/img/mastercard.svg":[function(require,module,exports) {
+module.exports = "/mastercard.c1a40876.svg";
+},{}],"src/img/americanexpress.svg":[function(require,module,exports) {
+module.exports = "/americanexpress.851af243.svg";
+},{}],"src/img/paypal.svg":[function(require,module,exports) {
+module.exports = "/paypal.c348333d.svg";
+},{}],"src/components/creditCarts/creditCarts.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/creditCarts/creditCarts.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getCreditCarts = getCreditCarts;
+var _visa = _interopRequireDefault(require("../../img/visa.svg"));
+var _mastercard = _interopRequireDefault(require("../../img/mastercard.svg"));
+var _americanexpress = _interopRequireDefault(require("../../img/americanexpress.svg"));
+var _paypal = _interopRequireDefault(require("../../img/paypal.svg"));
+require("./creditCarts.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getCreditCarts() {
+  var carts = document.createElement("div");
+  carts.className = "carts";
+  var container = document.createElement("div");
+  container.className = "container";
+  var creaditCartsBlock = document.createElement("div");
+  creaditCartsBlock.className = "credit-carts";
+  creaditCartsBlock.innerHTML = "\n        <p class=\"credit-carts-title\">\xA9 AZZANA - MINIMALIST JEWELRY 2018-2020</p>\n        <div class=\"credit-carts-box\">\n            <a class=\"credit-carts-link\">\n                <img class=\"credit-carts-img\" src=\"".concat(_visa.default, "\">\n            </a>\n             <a class=\"credit-carts-link\">\n                <img class=\"credit-carts-img\" src=\"").concat(_mastercard.default, "\">\n            </a>\n             <a class=\"credit-carts-link\">\n                <img class=\"credit-carts-img\" src=\"").concat(_americanexpress.default, "\">\n            </a>\n             <a class=\"credit-carts-link\">\n                <img class=\"credit-carts-img\" src=\"").concat(_paypal.default, "\">\n            </a>\n        </div>\n    ");
+  carts.append(container);
+  container.append(creaditCartsBlock);
+  return carts;
+}
+},{"../../img/visa.svg":"src/img/visa.svg","../../img/mastercard.svg":"src/img/mastercard.svg","../../img/americanexpress.svg":"src/img/americanexpress.svg","../../img/paypal.svg":"src/img/paypal.svg","./creditCarts.css":"src/components/creditCarts/creditCarts.css"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _pageHeader = require("./src/page/pageHeader/pageHeader");
 var _pageMain = require("./src/page/pageMain/pageMain");
 var _pageFooter = require("./src/page/pageFooter/pageFooter");
+var _creditCarts = require("./src/components/creditCarts/creditCarts");
 var app = document.querySelector("#app");
 var header = (0, _pageHeader.getPageHeader)();
 var main = (0, _pageMain.getPageMain)();
 var footer = (0, _pageFooter.getPageFooter)();
-app.append(header, main, footer);
-},{"./src/page/pageHeader/pageHeader":"src/page/pageHeader/pageHeader.js","./src/page/pageMain/pageMain":"src/page/pageMain/pageMain.js","./src/page/pageFooter/pageFooter":"src/page/pageFooter/pageFooter.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var creditCarts = (0, _creditCarts.getCreditCarts)();
+app.append(header, main, footer, creditCarts);
+},{"./src/page/pageHeader/pageHeader":"src/page/pageHeader/pageHeader.js","./src/page/pageMain/pageMain":"src/page/pageMain/pageMain.js","./src/page/pageFooter/pageFooter":"src/page/pageFooter/pageFooter.js","./src/components/creditCarts/creditCarts":"src/components/creditCarts/creditCarts.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -623,7 +662,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33643" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44911" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

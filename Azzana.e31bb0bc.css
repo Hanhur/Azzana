@@ -473,5 +473,22 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 0 70px;
 }
+.credit-carts
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 22px;
+}
+.credit-carts-title
+{
+    font-weight: 600;
+}
+.credit-carts-box
+{
+    display: flex;
+    align-items: center;
+    gap: 0 28px;
+}
 
 /*# sourceMappingURL=/Azzana.e31bb0bc.css.map */
