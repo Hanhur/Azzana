@@ -470,16 +470,135 @@ function getPageMain() {
   main.append(sectionMain, bestsellers, values, shippingBestsellers, servic);
   return main;
 }
-},{"../../components/main/sectionMain":"src/components/main/sectionMain.js","../../components/bestsellers/bestsellers":"src/components/bestsellers/bestsellers.js","../../components/values/values":"src/components/values/values.js","../../components/shippingBestsellers/shippingBestsellers":"src/components/shippingBestsellers/shippingBestsellers.js","../../components/servic/servic":"src/components/servic/servic.js","./pageMain.css":"src/page/pageMain/pageMain.css"}],"index.js":[function(require,module,exports) {
+},{"../../components/main/sectionMain":"src/components/main/sectionMain.js","../../components/bestsellers/bestsellers":"src/components/bestsellers/bestsellers.js","../../components/values/values":"src/components/values/values.js","../../components/shippingBestsellers/shippingBestsellers":"src/components/shippingBestsellers/shippingBestsellers.js","../../components/servic/servic":"src/components/servic/servic.js","./pageMain.css":"src/page/pageMain/pageMain.css"}],"src/img/facebook.svg":[function(require,module,exports) {
+module.exports = "/facebook.64abde7d.svg";
+},{}],"src/img/twitter.svg":[function(require,module,exports) {
+module.exports = "/twitter.015fe60e.svg";
+},{}],"src/img/linkedln.svg":[function(require,module,exports) {
+module.exports = "/linkedln.d1374d04.svg";
+},{}],"src/img/instagram.svg":[function(require,module,exports) {
+module.exports = "/instagram.20737fa7.svg";
+},{}],"src/components/footers/aboutShop/aboutShop.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/footers/aboutShop/aboutShop.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getAboutShop = getAboutShop;
+var _facebook = _interopRequireDefault(require("../../../img/facebook.svg"));
+var _twitter = _interopRequireDefault(require("../../../img/twitter.svg"));
+var _linkedln = _interopRequireDefault(require("../../../img/linkedln.svg"));
+var _instagram = _interopRequireDefault(require("../../../img/instagram.svg"));
+require("./aboutShop.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getAboutShop() {
+  var aboutShopBlock = document.createElement("div");
+  aboutShopBlock.className = "shop-block";
+  aboutShopBlock.innerHTML = "\n        <h2 class=\"shop-block-title\">ABOUT THE SHOP</h2>\n        <p class=\"shop-block-text\">\n            Lorem Ipsum is simply dummy text of the \n            printing and typesetting industry. Lorem\n            Ipsum has been the industry's standard \n            dummy text ever since the 1500s\n        </p>\n        <ul class=\"shop-block-list\">\n            <li class=\"shop-block-item\">\n                <a class=\"shop-block-link\">\n                    <img class=\"shop-block-img\" src=\"".concat(_facebook.default, "\">\n                </a>\n            </li>\n            <li class=\"shop-block-item\">\n                <a class=\"shop-block-link\">\n                    <img class=\"shop-block-img twitter\" src=\"").concat(_twitter.default, "\">\n                </a>\n            </li>\n            <li class=\"shop-block-item\">\n                <a class=\"shop-block-link\">\n                    <img class=\"shop-block-img\" src=\"").concat(_linkedln.default, "\">\n                </a>\n            </li>\n            <li class=\"shop-block-item\">\n                <a class=\"shop-block-link\">\n                    <img class=\"shop-block-img\" src=\"").concat(_instagram.default, "\">\n                </a>\n            </li>\n        </ul>\n    ");
+  return aboutShopBlock;
+}
+},{"../../../img/facebook.svg":"src/img/facebook.svg","../../../img/twitter.svg":"src/img/twitter.svg","../../../img/linkedln.svg":"src/img/linkedln.svg","../../../img/instagram.svg":"src/img/instagram.svg","./aboutShop.css":"src/components/footers/aboutShop/aboutShop.css"}],"src/components/footers/menu/menu.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/footers/menu/menu.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getMenu = getMenu;
+require("./menu.css");
+function getMenu() {
+  var menuBlock = document.createElement("div");
+  menuBlock.className = "menu-block";
+  menuBlock.innerHTML = "\n        <h2 class=\"menu-block-title\">MENU</h2>\n        <ul class=\"menu-block-list\">\n            <li class=\"menu-block-item\">\n                <a class=\"menu-block-link\">Home</a>\n            </li>\n            <li class=\"menu-block-item\">\n                <a class=\"menu-block-link\">Necklaces</a>\n            </li>\n            <li class=\"menu-block-item\">\n                <a class=\"menu-block-link\">Braceltes</a>\n            </li>\n            <li class=\"menu-block-item\">\n                <a class=\"menu-block-link\">Rings</a>\n            </li>\n            <li class=\"menu-block-item\">\n                <a class=\"menu-block-link\">Earrings</a>\n            </li>\n            <li class=\"menu-block-item\">\n                <a class=\"menu-block-link\">Ankle Bracelets</a>\n            </li>\n        </ul>\n    ";
+  return menuBlock;
+}
+},{"./menu.css":"src/components/footers/menu/menu.css"}],"src/components/footers/support/support.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/footers/support/support.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getSupport = getSupport;
+require("./support.css");
+function getSupport() {
+  var supportBlock = document.createElement("div");
+  supportBlock.className = "support-block";
+  supportBlock.innerHTML = "\n        <h2 class=\"support-block-title\">SUPPORT</h2>\n        <ul class=\"support-block-list\">\n            <li class=\"support-block-item\">\n                <a class=\"support-block-link\">Frequently Asked Questions</a>\n            </li>\n            <li class=\"support-block-item\">\n                <a class=\"support-block-link\">Returns and Refunds</a>\n            </li>\n            <li class=\"support-block-item\">\n                <a class=\"support-block-link\">CGV</a>\n            </li>\n            <li class=\"support-block-item\">\n                <a class=\"support-block-link\">Legal Notice</a>\n            </li>\n            <li class=\"support-block-item\">\n                <a class=\"support-block-link\">Track my order</a>\n            </li>\n        </ul>\n    ";
+  return supportBlock;
+}
+},{"./support.css":"src/components/footers/support/support.css"}],"src/components/footers/reachable/reachable.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/footers/reachable/reachable.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getReachable = getReachable;
+require("./reachable.css");
+function getReachable() {
+  var reachableBlock = document.createElement("div");
+  reachableBlock.className = "reachable-block";
+  reachableBlock.innerHTML = "\n        <h2 class=\"reachable-block-title\">REACHABLE 24/7</h2>\n        <p class=\"reachable-block-text\">\n            A question ? We can be reached by \n            email 7/7, do not hesitate to send us a \n            message for any request.\n        </p>\n        <address class=\"reachable-block-address\">\n            <a class=\"reachable-block-email\" href=\"mailto:info@azzanabijoux.fr\">info@azzanabijoux.fr</a>\n        </address>\n    ";
+  return reachableBlock;
+}
+},{"./reachable.css":"src/components/footers/reachable/reachable.css"}],"src/page/pageFooter/pageFooter.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/page/pageFooter/pageFooter.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getPageFooter = getPageFooter;
+var _aboutShop = require("../../components/footers/aboutShop/aboutShop");
+var _menu = require("../../components/footers/menu/menu");
+var _support = require("../../components/footers/support/support");
+var _reachable = require("../../components/footers/reachable/reachable");
+require("./pageFooter.css");
+function getPageFooter() {
+  var footer = document.createElement("footer");
+  footer.className = "footer";
+  var container = document.createElement("div");
+  container.className = "container";
+  var footerBlock = document.createElement("div");
+  footerBlock.className = "footer-block";
+  var shop = (0, _aboutShop.getAboutShop)();
+  var menu = (0, _menu.getMenu)();
+  var support = (0, _support.getSupport)();
+  var reachable = (0, _reachable.getReachable)();
+  footer.append(container);
+  container.append(footerBlock);
+  footerBlock.append(shop, menu, support, reachable);
+  return footer;
+}
+},{"../../components/footers/aboutShop/aboutShop":"src/components/footers/aboutShop/aboutShop.js","../../components/footers/menu/menu":"src/components/footers/menu/menu.js","../../components/footers/support/support":"src/components/footers/support/support.js","../../components/footers/reachable/reachable":"src/components/footers/reachable/reachable.js","./pageFooter.css":"src/page/pageFooter/pageFooter.css"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _pageHeader = require("./src/page/pageHeader/pageHeader");
 var _pageMain = require("./src/page/pageMain/pageMain");
+var _pageFooter = require("./src/page/pageFooter/pageFooter");
 var app = document.querySelector("#app");
 var header = (0, _pageHeader.getPageHeader)();
 var main = (0, _pageMain.getPageMain)();
-app.append(header, main);
-},{"./src/page/pageHeader/pageHeader":"src/page/pageHeader/pageHeader.js","./src/page/pageMain/pageMain":"src/page/pageMain/pageMain.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var footer = (0, _pageFooter.getPageFooter)();
+app.append(header, main, footer);
+},{"./src/page/pageHeader/pageHeader":"src/page/pageHeader/pageHeader.js","./src/page/pageMain/pageMain":"src/page/pageMain/pageMain.js","./src/page/pageFooter/pageFooter":"src/page/pageFooter/pageFooter.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -504,7 +623,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34329" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33643" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

@@ -1,0 +1,26 @@
+.shop-block-title
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Light-Pink);
+    text-transform: uppercase;
+    width: 188px;
+    margin-bottom: 21px;
+}
+.shop-block-text
+{
+    line-height: 2;
+    color: var(--Gray-3);
+    width: 300px;
+    margin-bottom: 18px;
+}
+.shop-block-list
+{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+.twitter
+{
+    padding-top: 5px;
+}

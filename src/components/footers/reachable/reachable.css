@@ -1,0 +1,15 @@
+.reachable-block-title
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Light-Pink);
+    margin-bottom: 21px;
+    text-transform: uppercase;
+}
+.reachable-block-text
+{
+    line-height: 1.8;
+    color: var(--Gray-3);
+    width: 270px;
+    margin-bottom: 30px;
+}
